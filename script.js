@@ -114,6 +114,7 @@
     butResult.onclick = function() {
         var res = eval(displayArea.value);
         document.getElementById("result").innerHTML = res.toString();
+        displayArea.value = res.toString();
         return false;
     }
     
@@ -161,7 +162,26 @@
         return false;
     }
    
+    document.onkeypress = function() {
+        if (keyCode == 13){
+            var res = eval(displayArea.value);
+            document.getElementById("result").innerHTML = res.toString();
+        }
+        return false;
+    }
     
+  // document.addEventListener("keydown", keyDownTextField, false);
+
+   /* function keyDownTextField(e) {
+        var keyCode = e.keyCode;
+    if(keyCode==13) {
+    var res = eval(displayArea.value);
+            document.getElementById("result").innerHTML = res.toString();
+        
+    }
+        return false;
+}
+    */
     
 //}
 
