@@ -119,6 +119,7 @@
     
      butClear.onclick = function() {
         displayArea.value = "";
+        document.getElementById("result").innerHTML = "0";
         return false;
     }
     
