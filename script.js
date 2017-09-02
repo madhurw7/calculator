@@ -42,72 +42,84 @@
     but[0].onclick = function() {
         clearDisplay();
         butValue("0");
+        but[0].blur();
         return false;
     }
     
     but[1].onclick = function() {
         clearDisplay();
         butValue("1");
+        but[1].blur();
         return false;
     }
     
     but[2].onclick = function() {
         clearDisplay();
         butValue("2");
+        but[2].blur();
         return false;
     }
     
     but[3].onclick = function() {
         clearDisplay();
         butValue("3");
+        but[3].blur();
         return false;
     }
     
     but[4].onclick = function() {
         clearDisplay();
         butValue("4");
+        but[4].blur();
         return false;
     }
     
     but[5].onclick = function() {
         clearDisplay();
         butValue("5");
+        but[5].blur();
         return false;
     }
     
     but[6].onclick = function() {
         clearDisplay();
         butValue("6");
+         but[6].blur();
         return false;
     }
     
     but[7].onclick = function() {
         clearDisplay();
         butValue("7");
+        but[7].blur();
         return false;
     }
     
     but[8].onclick = function() {
         clearDisplay();
         butValue("8");
+        but[8].blur();
         return false;
     }
     
     but[9].onclick = function() {
         clearDisplay();
         butValue("9");
+        but[9].blur();
         return false;
     }
     
     butAdd.onclick = function() {
         clearDisplay();
         butValue("+");
+        butAdd.blur();
         return false;
     }
     
     butMinus.onclick = function() {
         clearDisplay();
         butValue("-");
+        butMinus.blur();
         return false;
     }
     
@@ -162,26 +174,22 @@
         return false;
     }
    
-    document.onkeypress = function() {
-        if (keyCode == 13){
-            var res = eval(displayArea.value);
-            document.getElementById("result").innerHTML = res.toString();
-        }
-        return false;
-    }
+   
     
-  // document.addEventListener("keydown", keyDownTextField, false);
+//  window.addEventListener("keydown", keyDownTextField, false);
 
-   /* function keyDownTextField(e) {
+    window.onkeydown = function keyDownTextField(e) {
         var keyCode = e.keyCode;
-    if(keyCode==13) {
-    var res = eval(displayArea.value);
-            document.getElementById("result").innerHTML = res.toString();
+        if(keyCode==13) {
+            //var res = eval(displayArea.value);
+            //document.getElementById("result").innerHTML = res.toString();
+            butResult.click();
+           return false;   
+        }
         
     }
-        return false;
-}
-    */
+    
+    
     
 //}
 
