@@ -13,6 +13,10 @@
     var butDivide = document.getElementById("butDivide");
     var butClear = document.getElementById("butClear");
     var displayArea = document.getElementById("displayArea");
+    var butOpen = document.getElementById("butOpen");
+    var butClose = document.getElementById("butClose");
+    var butMod = document.getElementById("butMod");
+    var butPoint = document.getElementById("butPoint");
 
     function clearDisplay(){
         if (displayArea.value == "Everything appears here")
@@ -97,13 +101,13 @@
     
     butAdd.onclick = function() {
         clearDisplay();
-        butValue("+ ");
+        butValue("+");
         return false;
     }
     
     butMinus.onclick = function() {
         clearDisplay();
-        butValue("- ");
+        butValue("-");
         return false;
     }
     
@@ -122,16 +126,39 @@
     
     butDivide.onclick = function() {
         clearDisplay();
-        butValue("/ ");
+        butValue("/");
         return false;
     }
     
     butMultiply.onclick = function() {
         clearDisplay();
-        butValue("* ");
+        butValue("*");
         return false;
     }
     
+    butOpen.onclick = function() {
+        clearDisplay();
+        butValue("(");
+        return false;
+    }
+    
+    butClose.onclick = function() {
+        clearDisplay();
+        butValue(")");
+        return false;
+    }
+    
+    butMod.onclick = function() {
+        clearDisplay();
+        butValue("%");
+        return false;
+    }
+    
+    butPoint.onclick = function() {
+        clearDisplay();
+        butValue(".");
+        return false;
+    }
    
     
     

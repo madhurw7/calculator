@@ -1,11 +1,72 @@
 .buttons{
-    width: 40px;
+    /*width: 40px;
     height: 40px;
     margin: 3px;
     /*background: #ea526f;*/
+    
+     position: relative;
+    background-color: #EA526F;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
 }
+
+.buttons:after {
+    content: "";
+    background: #fceade;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.buttons:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.buttons:hover{
+    background-color: #FFED66;
+  color: #222650;
+    
+    
+}
+
 
 .displayArea{
     margin: 3px;
     width: 250px;
 }
+
+.resultFin{
+    /*width: 40px;
+    height: 40px;
+    margin: 3px;
+    /*background: #ea526f;*/
+    
+     position: relative;
+    background-color: #dde4ea;
+    border: none;
+    font-size: 28px;
+    color: #222650;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+
